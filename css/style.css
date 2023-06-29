@@ -30,14 +30,14 @@ body {
 
 .cabecalho-menu {
     display: flex;
-    gap: 80px;
+    gap: 5rem;
     
 }
 
 .cabecalho-menu-link {
     font-family: var(--fonte-secundaria);
     font-weight: 600;
-    font-size: 24px;
+    font-size: 1.5rem;
     color: var(--cor-secundaria);
     text-decoration: none;
 }
@@ -45,12 +45,13 @@ body {
 .cabecalho-menu-link:hover {
         color: #925204;
         transition: 0.3s;
-        font-size: 26px;
+        font-size: 1.625rem;
 }
 
 .apresentacao {
     padding: 5% 15%;
     display: flex;
+    gap: 82px;
     
     /* o align items serve pra posicionar os itens na vertical */
     align-items: center;
@@ -60,25 +61,25 @@ body {
 }
 
 .apresentacao-conteudo {
-    width: 615px;
+    width: 50%;
     display: flex;
     flex-direction: column;
     
     /* é o espaçamento entre um item e outro */
-    gap: 40px;
+    gap: 2.5rem;
 }
 
 .apresentacao-conteudo-sobre-nos {
-    width: 920px;
+    width: 57.5rem;
     display: flex;
     flex-direction: column;
     
     /* é o espaçamento entre um item e outro */
-    gap: 40px;
+    gap: 2.5rem;
 }
 
 .apresentacao-conteudo-titulo {
-    font-size: 36px;
+    font-size: 2.25rem;
     font-family: var(--fonte-primaria);
 }
 
@@ -88,7 +89,7 @@ body {
 }
 
 .apresentacao-conteudo-texto {
-    font-size: 24px;
+    font-size: 1.5rem;
     text-align: justify;
     font-family: var(--fonte-texto);
 }
@@ -98,22 +99,22 @@ body {
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    gap: 32px;
+    gap: 2rem;
 }
 
 .apresentacao-links-subtitulo {
-    font-size: 24px;
+    font-size: 1.5rem;
     font-family: var(--fonte-secundaria);
 }
 
-.apresentacao-links-link {
+.apresentacao-links-navegacao {
     display: flex;
-    gap: 12px;
+    gap: 0.75rem;
     align-items:center;
     text-align: center;
     justify-content: center;
     border: 2px solid var(--cor-terciaria);
-    width: 220px;
+    width: 50%;
     border-radius: 8px;
     font-size: 21px;
     padding: 16.5px 0;
@@ -124,17 +125,14 @@ body {
     
 }
 
-.apresentacao-links-link:hover {
+.apresentacao-links-navegacao:hover {
     background-color: var(--cor-terciaria);
     transition: 0.3s;
 }
 
 
 .foto-principal {
-    max-width: 620px;
-
-    margin-left: 120px;
-    /* pra distanciar a imagem do texto */
+    width: 50%;
 }
 
 
@@ -147,7 +145,7 @@ body {
     padding: 18px;
     text-align: center;
     font-family: var(--fonte-secundaria);
-    font-size: 14px;
+    font-size: 0.875rem;
 }
 
 
@@ -167,4 +165,12 @@ body {
 
 .gmap_iframe {
     height:300px!important;
+}
+
+/* vamos utilizar para tornar o site responsivo */
+@media (max-width: 1200px) {
+    .apresentacao {
+        flex-direction: column-reverse;
+        /* usado pra colocar os objetos na ordem contrária */
+    }
 }
