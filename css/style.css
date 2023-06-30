@@ -90,7 +90,7 @@ body {
 
 .apresentacao-conteudo-texto {
     font-size: 1.5rem;
-    text-align: justify;
+    text-align: left;
     font-family: var(--fonte-texto);
 }
 
@@ -167,10 +167,32 @@ body {
     height:300px!important;
 }
 
+
 /* vamos utilizar para tornar o site responsivo */
 @media (max-width: 1200px) {
+    .cabecalho {
+        padding: 10%;
+    }
+    
+    .cabecalho-menu {
+        justify-content: center;
+        
+    }
+
     .apresentacao {
         flex-direction: column-reverse;
         /* usado pra colocar os objetos na ordem contrária */
+        padding: 5%;
     }
+
+    .apresentacao-conteudo {
+        width: auto;
+        /* pra deixar o conteúdo do tamanho da tela */
+    }
+
+    .apresentacao-links-navegacao {
+        width: auto;
+    }
+        
+
 }
