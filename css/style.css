@@ -31,6 +31,8 @@ body {
 .cabecalho-menu {
     display: flex;
     gap: 5rem;
+    list-style: none;
+    align-items: center;
     
 }
 
@@ -135,6 +137,42 @@ body {
     width: 50%;
 }
 
+.botao-cta {
+  background-color: #5c6458;
+  border: 2px solid #422800;
+  border-radius: 30px;
+  box-shadow: #422800 4px 4px 0 0;
+  color: #ffffff;
+  display: inline-block;
+  font-weight: 600;
+  font-size: 18px;
+  padding: 0 18px;
+  line-height: 50px;
+  width: 50%;
+  text-align: center;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  font-family: var(--fonte-secundaria);
+}
+
+.botao-cta:hover {
+  background-color: #506346;
+  transition: 0.3s;
+}
+
+.botao-cta:active {
+  box-shadow: #422800 2px 2px 0 0;
+  transform: translate(2px, 2px);
+}
+
+@media (min-width: 768px) {
+  .botao-cta {
+    min-width: 120px;
+    padding: 0 25px;
+  }
+}
 
 
 
