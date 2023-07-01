@@ -210,7 +210,57 @@ body {
 }
 
 
+.contato {
+    padding: 5% 15%;
+    display: flex;
+    gap: 82px;
+    
+    /* o align items serve pra posicionar os itens na vertical */
+    align-items:center;
+    
+    /* enquanto o justify serve pra posicionar na horizontal */
+    justify-content:space-between;
+}
 
+/* formulário */
+.titulo-formulario {
+    font-size: 1.3em;
+    font-weight: bold;
+    font-family: var(--fonte-secundaria);
+
+
+}
+
+fieldset {
+    border:0;
+}
+
+input,select,textarea {
+    border-radius: 5px;
+    border-color: antiquewhite;
+
+}
+
+.campo {
+    margin-bottom: 1em;
+}
+
+.campo label {
+    margin-bottom: 0.2em;
+    margin-right: 0.4em;
+    display: inline-table;
+}
+
+fieldset .grupo .campo {
+    float: left;
+    margin-right: 1em;
+}
+
+.campo input[type="text"], .campo input[typ]
+
+
+
+/* mapa do google maps */
 .mapouter{
     position:relative;
     text-align:right;

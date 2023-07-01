@@ -18,7 +18,7 @@
         </ul> 
     </header>
 
-    <main class="apresentacao">
+    <main class="contato">
         <section class="apresentacao-conteudo">
              <h1 class="apresentacao-conteudo-titulo">Contato</h1>
               <p class="apresentacao-conteudo-texto">Se você está em busca de uma empresa de fotografia de casamentos comprometida em capturar a essência de seu amor de forma autêntica e atemporal, estamos aqui para transformar seu sonho em memórias eternas. Entre em contato conosco e deixe-nos fazer parte de sua história de amor.</p>
@@ -29,7 +29,56 @@
 
             </div>
         </section>
-        <img class="foto-principal" src="./imagens/foto1.jpg" alt="Foto de casal de noivos de costas">
+          <form>
+                <fieldset class="grupo">
+                    <div class="campo">
+                        <label class="titulo-formulario" for="nome">Nome</label>
+                        <input type="text" name="nome" id="nome" placeholder="Nome" required>
+                    </div>
+                    <div class="campo">
+                        <label class="titulo-formulario" for="sobrenome">Sobrenome</label>
+                        <input type="text" name="sobrenome" id="sobrenome" placeholder="Sobrenome">
+                    </div>
+                    <div class="campo">
+                        <label class="titulo-formulario" for="email">E-mail</label>
+                        <input type="email" name="email" id="email" placeholder="exemplo@dominio.com" required>
+                    </div>
+                    <div class="campo">
+                        <label class="titulo-formulario" for="telefone">Telefone</label>
+                        <input type="tel" id=telefone required placeholder="(xx) xxxxx-xxxx">
+                    </div>
+                </fieldset>
+                    <div class="campo">
+                        <label class="titulo-formulario" for="sexo">Sexo</label>
+                        <label> <input type="radio" name="sexo" value="feminino">Feminino</label>
+                        <label> <input type="radio" name="sexo" value="masculino">Masculino</label>
+                        <label> <input type="radio" name="sexo" value="outros">Outros</label>
+                    </div>
+                    <div class="campo">
+                        <label class="titulo-formulario" for="assunto">Assunto</label>
+                        <select id="assunto">
+                            <option value="">Casamento</option>
+                            <option value="">Pré-Wedding</option>
+                            <option value="">Outros</option>
+                        </select>
+                    </div>
+                    
+                    <fieldset class="grupo">
+                        <div class="campo">
+                            <label class="titulo-formulario" for="contato">Preferência de contato</label>
+                            <input type="checkbox" id="contato-tel" name="contato-tel" value="contato-tel">
+                            <label for="tel">Telefone</label>
+                            <input type="checkbox" id="contato-email" name="contato-email" value="contato-email">
+                            <label for="tel">E-mail</label>
+                        </div>
+                    </fieldset>
+                    <div class="campo">
+                        <label class="titulo-formulario" for="mensagem">Escreva sua mensagem</label>
+                        <textarea placeholder="Digite sua mensagem..." row="6" style="width:26em" name="mensagem" id="mensagem" name="mensagem"></textarea>
+                    </div>
+
+                    <button class="botao-formulario" type="submit">Enviar</button>
+            </form>
     </main>
     <div class="mapouter"><div class="gmap_canvas"><iframe class="gmap_iframe" width="100%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=500&amp;height=300&amp;hl=en&amp;q=senai vila mariana&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe><a href="https://gachanox.io/">Gacha Nox</a></div></div>
 
